@@ -1,0 +1,68 @@
+Loading python/3.11.4
+  Loading requirement: miniconda/3
+sr135
+Set parameter GURO_PAR_SPECIAL
+Set parameter TokenServer to value "HERA"
+Read MPS format model from file 296_IND.mps
+Reading time = 0.01 seconds
+dcopf: 491 rows, 1067 columns, 1508 nonzeros
+Set parameter Threads to value 1
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (linux64)
+
+CPU model: AMD EPYC 7H12 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 1 threads
+
+Optimize a model with 491 rows, 1067 columns and 1508 nonzeros
+Model fingerprint: 0x0cd5c3c3
+Model has 1488 general constraints
+Variable types: 881 continuous, 186 integer (186 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [2e+01, 1e+03]
+  Bounds range     [1e+00, 1e+03]
+  RHS range        [2e-02, 4e+00]
+  GenCon rhs range [2e+00, 1e+02]
+  GenCon coe range [1e+00, 1e+00]
+
+User MIP start produced solution with objective 1432.46 (0.01s)
+Loaded user MIP start with objective 1432.46
+
+Presolve added 1088 rows and 0 columns
+Presolve removed 0 rows and 287 columns
+Presolve time: 0.05s
+Presolved: 1579 rows, 780 columns, 4610 nonzeros
+Variable types: 602 continuous, 178 integer (178 binary)
+
+Root relaxation: objective 0.000000e+00, 709 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0   24 1432.46047    0.00000   100%     -    0s
+     0     0    0.00000    0   47 1432.46047    0.00000   100%     -    0s
+     0     0    0.00000    0   47 1432.46047    0.00000   100%     -    0s
+     0     0    0.00000    0   21 1432.46047    0.00000   100%     -    0s
+     0     0    0.00000    0   21 1432.46047    0.00000   100%     -    0s
+     0     0    0.00000    0   21 1432.46047    0.00000   100%     -    0s
+     0     0    0.00000    0   21 1432.46047    0.00000   100%     -    0s
+     0     0    0.00000    0   20 1432.46047    0.00000   100%     -    0s
+     0     2    0.00000    0   20 1432.46047    0.00000   100%     -    0s
+H  234   215                    1432.4604727    0.00000   100%  20.4    0s
+H  286   267                    1331.4152752    0.00000   100%  23.5    1s
+
+Cutting planes:
+  Gomory: 3
+  Implied bound: 2
+  Projected implied bound: 139
+  Flow cover: 32
+
+Explored 1349 nodes (42267 simplex iterations) in 4.79 seconds (2.63 work units)
+Thread count was 1 (of 128 available processors)
+
+Solution count 3: 1331.42 1432.46 1432.46 
+
+Optimal solution found (tolerance 1.00e-04)
+Warning: max constraint violation (1.0819e+00) exceeds tolerance
+Warning: max general constraint violation (1.0819e+00) exceeds tolerance
+         (model may be infeasible or unbounded - try turning presolve off)
+Best objective 1.331415275203e+03, best bound 1.331415275203e+03, gap 0.0000%
